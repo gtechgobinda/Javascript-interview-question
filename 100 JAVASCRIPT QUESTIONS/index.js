@@ -91,13 +91,58 @@
 
 
 //-----------toLocaleUpperCase()
+
 // let text="Hello World";
 // let newText=text.toLocaleUpperCase();
 // console.log(newText)
 
 
 //-----------toUpperCase()
+
 // let text="Hello World";
 // let newText=text.toUpperCase();
 // console.log(newText)
+
+//------------indexOf()
+
+// let text="Gobinda Saha";
+// let result=text.indexOf("Saha");
+// console.log(result);
+
+
+//--------includes()
+
+// let text="Hello Gobinda";
+// let result=text.includes("Gobinda")
+// console.log(result);
+
+
+//---------slice()
+
+// let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// let result=fruits.slice(1,3);
+// console.log(result);
+
+
+//-----------concat()
+
+// let arr1=[1,2,3,4];
+// let arr2=[5,6,7,8];
+// let newArr=arr1.concat(arr2);
+// console.log(newArr);
+
+// let str1="Gobinda";
+// let str2=" Saha";
+// let newStr=str1.concat(str2);
+// console.log(newStr);
+
+
+//---------lastIndexOf()
+// let text="My name is Gobinda Saha";
+// let result=text.lastIndexOf("Saha");
+// console.log(result)
+
+// let text="My name is Gobinda Saha.Saha is my family name";
+// let result=text.lastIndexOf("Saha");
+// console.log(result)
 

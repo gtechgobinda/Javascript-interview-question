@@ -245,3 +245,78 @@
 // }
 // let result=false && someFunc();
 // console.log(result);
+
+//---------Condition Statement---------
+
+//----------if/else statement
+
+// let x=5;
+// if(x>10){
+//     console.log("1");
+// }else if(x<5){
+//     console.log("2");
+// }else{
+//     console.log("3")
+// }
+
+
+//---------Ternary Operator
+// let y=20;
+// let z=y>10?"1":"0";
+// console.log(z);
+
+
+//----------Switch Statement
+// let a=6;
+// switch(a){
+//     case 1:
+//         console.log("1");
+//         break;
+
+//     case 6:
+//         console.log("5");
+//         break;
+    
+//     default:
+//         console.log("3")
+// }
+
+
+//--------------Spread Operator---------------
+
+//-------Spread Operator Examples
+// const array=[1,2,3];
+// console.log(...array)
+
+
+//-------Copying an array
+// const originalArray=[1,2,3];
+// const copiedArray=[...originalArray]
+// console.log(copiedArray)
+
+
+//--------Merging Array
+// const array1=[1,2,3];
+// const array2=[4,5];
+// const mergeArray=[...array1,...array2]
+// console.log(mergeArray);
+
+
+//--------passing multiple argument to a function
+// const numbers=[1,2,3,4,5];
+// sum(...numbers);
+// function sum(a,b,c,d,e){
+//     console.log(a+b+c+d+e);
+// }
+
+//---------Rest Operator--------
+
+function PersonalInfo(name,age,...hobbies){
+    console.log(`Name: ${name}`);
+    console.log(`Age:${age}`);
+    console.log(`Hobbies: ${hobbies}`)
+}
+
+PersonalInfo('Gobinda Saha',23,"coding","stock market")
+
+

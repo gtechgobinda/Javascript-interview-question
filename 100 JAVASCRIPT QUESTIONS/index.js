@@ -138,11 +138,110 @@
 
 
 //---------lastIndexOf()
+
 // let text="My name is Gobinda Saha";
 // let result=text.lastIndexOf("Saha");
 // console.log(result)
 
 // let text="My name is Gobinda Saha.Saha is my family name";
 // let result=text.lastIndexOf("Saha");
-// console.log(result)
+// console.log(result);
 
+
+//----------charCodeAt()
+
+// let text="Gobinda Saha"
+// let code = text.charCodeAt(0);
+// console.log(code);
+
+
+//---------trim()
+
+// let text="      Hello World        ";
+// let result=text.trim();
+// console.log(text);
+// console.log(result);
+
+
+//-----------charAt()
+
+// let text="Gobinda Saha"
+// let result=text.charAt(0);
+// console.log(result);
+
+
+//-------------valueOf()
+
+// let text="Gobinda Saha"
+// let result=text.valueOf();
+// console.log(result);
+
+
+//---------------- typeof operator ---------------
+// let num=42;
+// let str="Hello World";
+// let bool=true;
+// let obj={key:"value"};
+// let arr=[1,2,3,4];
+// let func=function(){}
+
+// console.log(typeof num)
+// console.log(typeof str)
+// console.log(typeof bool)
+// console.log(typeof obj)
+// console.log(typeof func)
+
+
+//--------------type coercion----------------------
+
+// let string="42";
+// let number=42;
+// let boolean=true;
+// let nullValue=null;
+
+// console.log(string+number);
+// console.log(number+boolean);
+// console.log(number == string);
+// console.log(boolean == 1);
+// console.log(boolean + nullValue);
+
+
+//-----------Operator precedence-------------------
+
+// let a=6;
+// let b=3;
+// let c=2;
+// let result=a+b*c+(a+b);
+// console.log(result);
+
+// ----------Operator--------------
+
+//--------Unary Operator
+
+// let a=5;
+// let b=-a;
+// console.log(b);
+// console.log(++a);
+
+
+//-------Binary Operator
+
+// let x=10;
+// let y=3;
+// let result=x+y;
+// console.log(result);
+
+
+//--------Ternary Operator
+
+// let result=(2>3) ? 'Yes':'No';
+// console.log(result);
+
+
+//----------Short Circuit---------
+
+// function someFunc(){
+//     let result =2+4
+// }
+// let result=false && someFunc();
+// console.log(result);

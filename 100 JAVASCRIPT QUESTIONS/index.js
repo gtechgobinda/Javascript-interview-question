@@ -311,12 +311,83 @@
 
 //---------Rest Operator--------
 
-function PersonalInfo(name,age,...hobbies){
-    console.log(`Name: ${name}`);
-    console.log(`Age:${age}`);
-    console.log(`Hobbies: ${hobbies}`)
-}
+// function PersonalInfo(name,age,...hobbies){
+//     console.log(`Name: ${name}`);
+//     console.log(`Age:${age}`);
+//     console.log(`Hobbies: ${hobbies}`)
+// }
 
-PersonalInfo('Gobinda Saha',23,"coding","stock market")
+// PersonalInfo('Gobinda Saha',23,"coding","stock market")
 
+
+// -----------------Array Methods--------------------
+
+//---------Array Get Methods-----------
+
+//-------indexOf()
+// let fruits=["Apple","Banana","Jackfruit","Lichi","Mango"]
+// let result=fruits.indexOf("Mango")
+// console.log(result)
+
+//--------find()
+// const array=[1,2,3,4,5];
+// let result=array.find((num)=>num%2===0);
+// console.log(result);
+
+//------filter()
+// const array=[1,2,3,4,5];
+// let result=array.filter((num)=>num%2===0);
+// console.log(result);(
+
+//------slice()
+// const array=["a","b","c","d","e"];
+// let result=array.slice(1,4);
+// console.log(result);
+
+
+//-----------Array Add methods--------------
+
+//---------push()
+// let array1=[1,2];
+// array1.push(3,4);
+// console.log(array1);
+
+//---------concat()
+// let arr=[1,2,3,4];
+// let newArr=arr.concat(5,6);
+// console.log(newArr);
+
+//-----------Array Remove methods--------------
+
+//---------pop()
+// let arr=[1,2,3,4,5];
+// let popped=arr.pop();
+// console.log(arr)
+// console.log(popped)
+
+//---------shift()
+// let arr=[1,2,3,4,5];
+// let shifted=arr.shift();
+// console.log(arr)
+// console.log(shifted)
+
+
+//------------splice()-----------------
+
+//-----add element
+
+// let letters=['a','b','c'];
+// letters.splice(1,0,'x','y');
+// console.log(letters)
+
+
+//-----remove element
+// let letters=['a','b','c'];
+// letters.splice(1,1);
+// console.log(letters)
+
+//-----replace element
+// let letters=['a','b','c'];
+// letters.splice(2,1,'q');
+// console.log(letters)
 

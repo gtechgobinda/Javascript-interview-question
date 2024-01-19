@@ -1,6 +1,6 @@
-// difference between var , let and const 
+// difference between var , let and const
 
-//-------using var--------- 
+//-------using var---------
 
 // function example(){
 //     if(true){
@@ -36,14 +36,12 @@
 // let result=str1+" "+str2;
 // console.log(result);
 
-
 //--------substr()
 
 // let str="Gobinda Saha"
 // let part=str.substr(0,7);
 // // let part =str.substr(8)
 // console.log(part);
-
 
 //-------substring()
 
@@ -60,13 +58,11 @@
 // let newText=text.replace(/MICROSOFT/g,"Amazon");
 // console.log(newText);
 
-
 //------replaceAll()
 
 // let text = "Please visit Microsoft and Microsoft!";
 // let newText=text.replaceAll(/Microsoft/g,"Google");
 // console.log(newText)
-
 
 //--------search()
 
@@ -74,14 +70,11 @@
 // let position=text.search("house");
 // console.log(position)
 
-
 //---------toLocaleLowerCase()
 
 // let text="Hello World";
 // let newText=text.toLocaleLowerCase();
 // console.log(newText)
-
-
 
 //----------toLowerCase()
 
@@ -89,13 +82,11 @@
 // let newText=text.toLowerCase();
 // console.log(newText)
 
-
 //-----------toLocaleUpperCase()
 
 // let text="Hello World";
 // let newText=text.toLocaleUpperCase();
 // console.log(newText)
-
 
 //-----------toUpperCase()
 
@@ -109,20 +100,17 @@
 // let result=text.indexOf("Saha");
 // console.log(result);
 
-
 //--------includes()
 
 // let text="Hello Gobinda";
 // let result=text.includes("Gobinda")
 // console.log(result);
 
-
 //---------slice()
 
 // let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // let result=fruits.slice(1,3);
 // console.log(result);
-
 
 //-----------concat()
 
@@ -136,7 +124,6 @@
 // let newStr=str1.concat(str2);
 // console.log(newStr);
 
-
 //---------lastIndexOf()
 
 // let text="My name is Gobinda Saha";
@@ -147,13 +134,11 @@
 // let result=text.lastIndexOf("Saha");
 // console.log(result);
 
-
 //----------charCodeAt()
 
 // let text="Gobinda Saha"
 // let code = text.charCodeAt(0);
 // console.log(code);
-
 
 //---------trim()
 
@@ -162,20 +147,17 @@
 // console.log(text);
 // console.log(result);
 
-
 //-----------charAt()
 
 // let text="Gobinda Saha"
 // let result=text.charAt(0);
 // console.log(result);
 
-
 //-------------valueOf()
 
 // let text="Gobinda Saha"
 // let result=text.valueOf();
 // console.log(result);
-
 
 //---------------- typeof operator ---------------
 // let num=42;
@@ -191,7 +173,6 @@
 // console.log(typeof obj)
 // console.log(typeof func)
 
-
 //--------------type coercion----------------------
 
 // let string="42";
@@ -204,7 +185,6 @@
 // console.log(number == string);
 // console.log(boolean == 1);
 // console.log(boolean + nullValue);
-
 
 //-----------Operator precedence-------------------
 
@@ -223,7 +203,6 @@
 // console.log(b);
 // console.log(++a);
 
-
 //-------Binary Operator
 
 // let x=10;
@@ -231,12 +210,10 @@
 // let result=x+y;
 // console.log(result);
 
-
 //--------Ternary Operator
 
 // let result=(2>3) ? 'Yes':'No';
 // console.log(result);
-
 
 //----------Short Circuit---------
 
@@ -259,12 +236,10 @@
 //     console.log("3")
 // }
 
-
 //---------Ternary Operator
 // let y=20;
 // let z=y>10?"1":"0";
 // console.log(z);
-
 
 //----------Switch Statement
 // let a=6;
@@ -276,11 +251,10 @@
 //     case 6:
 //         console.log("5");
 //         break;
-    
+
 //     default:
 //         console.log("3")
 // }
-
 
 //--------------Spread Operator---------------
 
@@ -288,19 +262,16 @@
 // const array=[1,2,3];
 // console.log(...array)
 
-
 //-------Copying an array
 // const originalArray=[1,2,3];
 // const copiedArray=[...originalArray]
 // console.log(copiedArray)
-
 
 //--------Merging Array
 // const array1=[1,2,3];
 // const array2=[4,5];
 // const mergeArray=[...array1,...array2]
 // console.log(mergeArray);
-
 
 //--------passing multiple argument to a function
 // const numbers=[1,2,3,4,5];
@@ -318,7 +289,6 @@
 // }
 
 // PersonalInfo('Gobinda Saha',23,"coding","stock market")
-
 
 // -----------------Array Methods--------------------
 
@@ -343,7 +313,6 @@
 // const array=["a","b","c","d","e"];
 // let result=array.slice(1,4);
 // console.log(result);
-
 
 //-----------Array Add methods--------------
 
@@ -371,7 +340,6 @@
 // console.log(arr)
 // console.log(shifted)
 
-
 //------------splice()-----------------
 
 //-----add element
@@ -379,7 +347,6 @@
 // let letters=['a','b','c'];
 // letters.splice(1,0,'x','y');
 // console.log(letters)
-
 
 //-----remove element
 // let letters=['a','b','c'];
@@ -391,3 +358,15 @@
 // letters.splice(2,1,'q');
 // console.log(letters)
 
+//-----------Array Modify methods--------------
+
+//---------map()
+// let arr=[1,2,3];
+// let mapArr=arr.map((e)=>e*2);
+// console.log(mapArr)
+
+//----------forEach()
+let arr = [1, 2, 3];
+arr.forEach((e) => {
+  console.log(e * 2);
+});

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button">Click Here</button>
+    <script>
+        const button = document.getElementById("button");
+        function debounce(fn, delay) {
+            let timoutId;
+            return function () {
+                if (timoutId) {
+                    clearTimeout(timoutId)
+                }
+                timoutId = setTimeout(() => {
+                    fn();
+                }, delay);
+            };
+        }
+        button.addEventListener(
+            "click",
+            debounce(function () {
+                console.log("Clicked");
+            }, 500)
+        );
+
+    </script>
+</body>
+
+</html>

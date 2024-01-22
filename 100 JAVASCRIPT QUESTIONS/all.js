@@ -434,20 +434,6 @@
 
 //-----------Hoisting-----------
 
-//----var
-// a=2;
-// console.log(a)
-// var a;
-
-//----let
-// a=2;
-// console.log(a);
-// let a;
-
-//-----const
-// a=2;
-// console.log(a);
-// const a;
 
 
 
@@ -461,90 +447,65 @@
 //-----------Object Destructuring----------
 
 //normal way before ES6
-// const classDetails={
-//     student:60,
-//     benches:30,
-//     window:3,
-//     door:1
-// }
-// const classStudent=classDetails.student;
-// const classBenches=classDetails.benches;
-// const classWindow=classDetails.window;
-// const classDoor=classDetails.door;
+const classDetails={
+    student:60,
+    benches:30,
+    window:3,
+    door:1
+}
+const classStudent=classDetails.student;
+const classBenches=classDetails.benches;
+const classWindow=classDetails.window;
+const classDoor=classDetails.door;
 
-// console.log(classStudent)
+console.log(classStudent)
 
 
 // ----Using Object Destructuring after ES6
-// const classDetails={
-//     student:60,
-//     benches:30,
-//     window:3,
-//     door:1
-// }
-// const {student:classStudent,benches:classBenches,window:classWindow,door:classDoor}=classDetails
+const classDetails={
+    student:60,
+    benches:30,
+    window:3,
+    door:1
+}
+const {student:classStudent,benches:classBenches,window:classWindow,door:classDoor}=classDetails
 
-// console.log(classStudent);
+console.log(classStudent);
 
 
 //--------------Array Destructuring--------------
 
 //-----using array destructuring after ES6
-// const arr=[1,2,3,4];
-// const[first,second,third,fourth]=arr;
-// console.log(first)
+const arr=[1,2,3,4];
+const[first,second,third,fourth]=arr;
+console.log(first)
 
 
 //--------------Promises----------------
-// let examplePromise=new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         resolve('Task completed')
-//     },2000)
-// });
+let examplePromise=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('Task completed')
+    },2000)
+});
 
-// examplePromise
-// .then((result)=>{
-//     console.log(result)
-// })
-// .catch((error)=>{
-//     console.log(error)
-// })
+examplePromise
+.then((result)=>{
+    console.log(result)
+})
+.catch((error)=>{
+    console.log(error)
+})
 
 
 //-----------Higher Order Function-------------------
-// function callbackFunction(){
-//     console.log('I am  a callback function');
-// }
-
-// // higher order function
-// function higherOrderFunction(func){
-//     console.log('I am higher order function')
-//     func()
-// }
-
-// higherOrderFunction(callbackFunction);
-
-
-//-------Async Await function--------------
-
-
-// Function that returns a promise after a delay
-function delay(ms){
-    return new Promise(resolve=>{
-        setTimeout(resolve,ms);
-    });
+function callbackFunction(){
+    console.log('I am  a callback function');
 }
 
-async function exampleAsyncFunction(){
-    console.log("Start");
-
-    await delay(2000);
-    console.log("After 2 seconds");
-
-
-    await delay(4000);
-    console.log("After 4 seconds");
-
+// higher order function
+function higherOrderFunction(func){
+    console.log('I am higher order function')
+    func()
 }
-exampleAsyncFunction()
-  
+
+higherOrderFunction(callbackFunction);

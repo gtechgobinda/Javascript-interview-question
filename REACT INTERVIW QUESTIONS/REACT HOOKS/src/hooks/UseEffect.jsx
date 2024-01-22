@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./UseEffect.css"
 const UseEffect = () => {
   const [number, setNumber] = useState(0);
 

@@ -7,10 +7,10 @@ import UseReducer from "./hooks/UseReducer";
 const App = () => {
   return (
     <>
-      {/* <UseState/> */}
+      <UseState/>
       {/* <UseEffect/> */}
       {/* <UseMemo/> */}
-      <UseReducer/>
+      {/* <UseReducer/> */}
     </>
   );
 };

@@ -16,11 +16,11 @@
 // show order summery
 //update wallet
 
-const cart = ["shoes", "pants", "kurta"];
-createOrder(cart, function () {
-  proccedToPayment(function () {
-    showOrderSummery(function () {
-      updateWallet();
-    });
-  });
-});
+// const cart = ["shoes", "pants", "kurta"];
+// createOrder(cart, function () {
+//   proccedToPayment(function () {
+//     showOrderSummery(function () {
+//       updateWallet();
+//     });
+//   });
+// });

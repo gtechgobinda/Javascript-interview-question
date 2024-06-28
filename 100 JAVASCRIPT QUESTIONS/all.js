@@ -5,9 +5,9 @@
 function example(){
     if(true){
         var count=10;
-        console.log(count);
+        console.log(count); // output:10
     }
-    console.log(count);
+    console.log(count); // output:10
 }
 example();
 
@@ -16,16 +16,16 @@ example();
 function example(){
     if(true){
         let count=10;
-        console.log(count);
+        console.log(count); // output:10
     }
-    // console.log(count);
+    console.log(count); //show error : count is not defined
 }
 example()
 
 //--------using const-----------
 const z=10;
 z=20;
-console.log(z)
+console.log(z) // error: Assignment to constant variable.
 
 // -------------------String Operations-----------------------------
 
@@ -39,8 +39,8 @@ console.log(result);
 //--------substr()
 
 let str="Gobinda Saha"
-let part=str.substr(0,7);
-// let part =str.substr(8)
+let part=str.substr(0,7); // output: Gobinda
+let part =str.substr(8);  // output: Saha 
 console.log(part);
 
 //-------substring()
@@ -275,10 +275,10 @@ console.log(mergeArray);
 
 //--------passing multiple argument to a function
 const numbers=[1,2,3,4,5];
-sum(...numbers);
 function sum(a,b,c,d,e){
     console.log(a+b+c+d+e);
 }
+sum(...numbers); //output: 15
 
 //---------Rest Operator--------
 

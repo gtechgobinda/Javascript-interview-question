@@ -1,0 +1,2 @@
+const closureFunction =outerFunction()
+closureFunction()

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements and Pseudo-classes Example</title>
+    <style>
+        /* Styling with CSS */
+        .example::before {
+            content: "Before ";
+            font-weight: bold;
+        }
+
+        .example::after {
+            content: " After";
+            font-style: italic;
+        }
+
+        p::first-letter {
+            font-size: 150%;
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+
+        /* Styling for different link states */
+
+        /* Normal link */
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        /* Visited link */
+        /* a:visited {
+            color: purple;
+        } */
+
+        /* Hovered link */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Active link */
+        a:active {
+            color: green;
+        }
+
+        /* Focused link */
+        a:focus {
+            outline: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="example">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolore laboriosam nulla quam, ab velit tempore minus eaque at sapiente porro deleniti recusandae voluptatum veniam, ut repellat fugit illo quibusdam inventore labore non assumenda? Nostrum obcaecati corrupti ipsam perferendis, mollitia odio iste ratione maiores fugiat aut! Autem maiores saepe recusandae.</p>
+    </div>
+
+
+    <p>Click on the following links to see different states:</p>
+    <ul>
+        <li><a href="https://example.com">Normal Link</a></li>
+        <li><a href="https://example.com" style="color: purple;">Visited Link</a></li>
+        <li><a href="https://example.com">Hover over this Link</a></li>
+        <li><a href="https://example.com">Click this Link</a></li>
+    </ul>
+</body>
+</html>

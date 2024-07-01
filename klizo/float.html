@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Property Example</title>
+    <style>
+        .container {
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .left {
+            float: left;
+            background-color: lightblue;
+        }
+
+        .right {
+            float: right;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box left">Left Floated Box</div>
+        <div class="box right">Right Floated Box</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec felis ut leo feugiat placerat. Duis vitae ex vitae purus tempus ultricies. Nam tristique, magna et tincidunt feugiat, nulla nisi lobortis arcu, id tincidunt tellus ligula nec ex.</p>
+        <p>Suspendisse id leo ac purus consequat dictum. Etiam luctus aliquet velit, sit amet sollicitudin ligula euismod eu. Proin aliquam est ut ex dapibus, eget maximus turpis eleifend.</p>
+    </div>
+</body>
+</html>

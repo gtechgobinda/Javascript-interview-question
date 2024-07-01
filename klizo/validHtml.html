@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample HTML document using a variety of tags.">
+    <title>Sample HTML Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background: #f4f4f4; padding: 10px; text-align: center; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+        section { margin: 20px 0; }
+        .highlight { color: red; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Sample Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is a sample paragraph in the home section. <strong>This text is bold.</strong> <em>This text is italic.</em></p>
+            <p>Here is an example of a link: <a href="https://example.com" target="_blank">Example</a></p>
+            <img src="./assets/img1.jpg" alt="Sample Image" width="300">
+            <figure>
+                <img src="./assets/img2.jpeg" alt="Sample Image" width="300">
+                <figcaption>Figure 1: This is a sample image.</figcaption>
+            </figure>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is a sample paragraph in the about section.</p>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+            <ol>
+                <li>Ordered item 1</li>
+                <li>Ordered item 2</li>
+                <li>Ordered item 3</li>
+            </ol>
+            <dl>
+                <dt>Definition Term 1</dt>
+                <dd>Definition Description 1</dd>
+                <dt>Definition Term 2</dt>
+                <dd>Definition Description 2</dd>
+            </dl>
+            <blockquote>
+                This is a sample blockquote. It is used to indicate the quotation of a large section of text from another source.
+            </blockquote>
+            <pre>
+                This is preformatted text.
+                It preserves whitespace and line breaks.
+            </pre>
+            <code>
+                // This is a sample code block.
+                function helloWorld() {
+                    console.log("Hello, world!");
+                }
+            </code>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sample HTML Document. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Document is ready.');
+        });
+    </script>
+</body>
+</html>

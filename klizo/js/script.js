@@ -113,41 +113,79 @@
 //   });
 // });
 
-
 //----using async await (alternative way callback)
-function step1() {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        console.log("Step 1 completed");
-        resolve(10);
-      }, 1000);
-    });
-  }
-  function step2(step1Result) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        console.log("Step 2 completed");
-        resolve(step1Result + 10);
-      }, 1000);
-    });
-  }
-  function step3(step2Result) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        console.log("Step 2 completed");
-        resolve(step2Result + 10);
-      }, 1000);
-    });
-  }
+// function step1() {
+//     return new Promise((resolve) => {
+//       setTimeout(() => {
+//         console.log("Step 1 completed");
+//         resolve(10);
+//       }, 1000);
+//     });
+//   }
+//   function step2(step1Result) {
+//     return new Promise((resolve) => {
+//       setTimeout(() => {
+//         console.log("Step 2 completed");
+//         resolve(step1Result + 10);
+//       }, 1000);
+//     });
+//   }
+//   function step3(step2Result) {
+//     return new Promise((resolve) => {
+//       setTimeout(() => {
+//         console.log("Step 2 completed");
+//         resolve(step2Result + 10);
+//       }, 1000);
+//     });
+//   }
 
-const executedAllSteps = async () => {
-    try {
-        const result1 = await step1();
-        const result2 = await step2(result1);
-        const finalResult = await step3(result2);
-        console.log('Final result:', finalResult);
-    } catch (error) {
-        console.error('Error:', error);
-    }
-};
-executedAllSteps();
+// const executedAllSteps = async () => {
+//     try {
+//         const result1 = await step1();
+//         const result2 = await step2(result1);
+//         const finalResult = await step3(result2);
+//         console.log('Final result:', finalResult);
+//     } catch (error) {
+//         console.error('Error:', error);
+//     }
+// };
+// executedAllSteps();
+
+//-----map()
+// const numbers = [1, 2, 3, 4, 5];
+// const doubled=numbers.map((item)=>(item*2))
+// console.log(numbers);
+// console.log(doubled);
+
+//-----filter()
+// const numbers=[1,2,3,4,5];
+// const filteredNums=numbers.filter((number)=>(number>=3))
+// console.log(numbers);
+// console.log(filteredNums);
+
+// // ------reduece()
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
+// console.log(sum);
+
+//-----forEach()
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.forEach((number, index, array) => {
+//   array[index] = number * 2;
+// });
+// console.log(numbers)
+
+//----closure
+function outerFunc() {
+  let outerVariable = "I am outer function";
+  function innerFunc() {
+    console.log(outerVariable);
+  }
+  return innerFunc;
+}
+
+const inner = outerFunc();
+inner();
